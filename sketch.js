@@ -612,8 +612,7 @@ function drawTrees()
 // Function to draw bird objects
 function drawBird()
       {
-        var yourTwoNumbers = [0,6];
-        var n=yourTwoNumbers[Math.floor(Math.random() * yourTwoNumbers.length)];
+        
        for(i=0;i<bird.length;i++)
           {
           
@@ -621,18 +620,18 @@ function drawBird()
           stroke(0);
           strokeWeight(1)
           beginShape();
-          vertex(bird[i].bird_Posx,bird[i].bird_Posy+n);
+          vertex(bird[i].bird_Posx,bird[i].bird_Posy);
           vertex(bird[i].bird_Posx+15,bird[i].bird_Posy+10);
-          vertex(bird[i].bird_Posx+30,bird[i].bird_Posy+n);
+          vertex(bird[i].bird_Posx+30,bird[i].bird_Posy);
           endShape();
           noStroke();
     
     
           stroke(0);
           beginShape();
-          vertex(bird[i].bird_Posx+20,bird[i].bird_Posy+20+n);
+          vertex(bird[i].bird_Posx+20,bird[i].bird_Posy+20);
           vertex(bird[i].bird_Posx+35,bird[i].bird_Posy+30);
-          vertex(bird[i].bird_Posx+50,bird[i].bird_Posy+20+n);
+          vertex(bird[i].bird_Posx+50,bird[i].bird_Posy+20);
           endShape();bird[i]
     noStroke();
     
